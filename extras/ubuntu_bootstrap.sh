@@ -24,7 +24,7 @@ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
 echo "deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 
 $APT update -y
-$APT install -y build-essential git python-dev mongodb-org mongodb-org-server mongodb-org-mongos mongodb-org-shell redis-server libcurl4 libxml2-dev libxslt-dev zlib1g-dev python-virtualenv python-pip python3-pip nginx yarn uwsgi-plugin-python3
+$APT install -y build-essential git python3 mongodb-org mongodb-org-server mongodb-org-mongos mongodb-org-shell redis-server libcurl4 libxml2-dev libxslt-dev zlib1g-dev virtualenv pip nginx yarn uwsgi-plugin-python3
 
 # Clone project
 cd /opt

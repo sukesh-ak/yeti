@@ -46,3 +46,10 @@ To start a more performant container for web requests, run:
     docker-compose -p yeti -f extras/docker/dev/docker-compose.yaml run -p 8080:8080 yeti /docker-entrypoint.sh uwsgi-http
 
 Then point your browser to <http://localhost:8080.>
+
+## Production setup by Sukesh
+
+    docker-compose -p yeti -f extras/docker/dev/docker-compose.yaml up -d
+
+Then point your browser to <http://localhost:8080>
+
